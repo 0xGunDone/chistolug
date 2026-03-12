@@ -1,0 +1,23 @@
+{
+  "name": "ЧИСТОЛУГ",
+  "short_name": "ЧИСТОЛУГ",
+  "description": "Покос травы, расчистка участков, борщевик, пни, мульчер и робот-косилки.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08160b",
+  "theme_color": "#0d2413",
+  "icons": [
+    {
+      "src": "assets/favicon-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/favicon-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

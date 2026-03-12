@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЧИСТОЛУГ - покос травы, расчистка участков, уничтожение борщевика и удаление пней</title>
+    <meta
+      name="description"
+      content="ЧИСТОЛУГ выполняет покос травы, расчистку заросших участков, уничтожение борщевика, удаление пней, мульчирование и сервис робот-косилок. Современный подход, понятный прайс, работы под ключ."
+    />
+    <meta
+      name="keywords"
+      content="покос травы, расчистка участков, уничтожение борщевика, робот косилка, удаление пней, мульчер, покос газона"
+    />
+    <meta name="theme-color" content="#0d2413" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <link rel="canonical" href="https://chistolug.ru/" />
+    <link rel="icon" href="assets/favicon-logo.png" type="image/png" sizes="512x512" />
+    <link rel="apple-touch-icon" href="assets/favicon-logo.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ЧИСТОЛУГ - современный сервис покоса и расчистки участков" />
+    <meta
+      property="og:description"
+      content="От аккуратного покоса газона до тяжёлой расчистки мульчером: борщевик, бурьян, пни, мелколесье и робот-косилки."
+    />
+    <meta property="og:url" content="https://chistolug.ru/" />
+    <meta property="og:site_name" content="ЧИСТОЛУГ" />
+    <meta property="og:image" content="https://chistolug.ru/assets/og-card.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ЧИСТОЛУГ - покос, расчистка и восстановление участков" />
+    <meta
+      name="twitter:description"
+      content="Комплексный ландшафтный сервис: трава, борщевик, пни, мульчер и робот-косилки."
+    />
+    <meta name="twitter:image" content="https://chistolug.ru/assets/og-card.svg" />
+    <link rel="preload" href="assets/hiro.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://chistolug.ru/#organization",
+            "name": "ЧИСТОЛУГ",
+            "url": "https://chistolug.ru/",
+            "logo": "https://chistolug.ru/assets/logo-header.png",
+            "image": "https://chistolug.ru/assets/og-card.svg",
+            "description": "Комплексный сервис по покосу травы, расчистке участков, уничтожению борщевика, удалению пней, мульчированию и обслуживанию робот-косилок.",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Россия"
+            },
+            "email": "info@chistolug.ru",
+            "knowsAbout": [
+              "Покос травы",
+              "Расчистка участков",
+              "Уничтожение борщевика",
+              "Робот-косилки",
+              "Удаление пней",
+              "Мульчирование"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://chistolug.ru/#website",
+            "url": "https://chistolug.ru/",
+            "name": "ЧИСТОЛУГ",
+            "description": "Покос травы, расчистка участков, борщевик, пни, мульчер и робот-косилки под ключ.",
+            "publisher": {
+              "@id": "https://chistolug.ru/#organization"
+            },
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "Service",
+            "name": "Покос травы и расчистка участков",
+            "provider": {
+              "@id": "https://chistolug.ru/#organization"
+            },
+            "description": "Покос газонов, бурьяна, сложных рельефов и заброшенных участков триммером и мотокосой.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "RUB",
+                "minPrice": "15",
+                "unitCode": "MTK"
+              }
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Уничтожение борщевика",
+            "provider": {
+              "@id": "https://chistolug.ru/#organization"
+            },
+            "description": "Гербицидная обработка, механическое удаление, выкапывание с корнем и вывоз растительных остатков.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "RUB",
+                "minPrice": "25",
+                "unitCode": "MTK"
+              }
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Робот-косилки без стационарного монтажа",
+            "provider": {
+              "@id": "https://chistolug.ru/#organization"
+            },
+            "description": "Доставка робота на участок, настройка, автономный покос и регулярное обслуживание по графику.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "RUB",
+                "minPrice": "8",
+                "unitCode": "MTK"
+              }
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Удаление пней",
+            "provider": {
+              "@id": "https://chistolug.ru/#organization"
+            },
+            "description": "Фрезеровка пней, ручное выкапывание корней, засыпка и выравнивание поверхности после удаления.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "RUB",
+                "minPrice": "1500"
+              }
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "С какими участками работает ЧИСТОЛУГ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Компания работает с газонами, заброшенными участками, сложным рельефом, борщевиком, порослью, кустарником, мелколесьем и площадками после строительства."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Можно ли заказать только осмотр и смету?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да. Для борщевика, пней, робот-косилок и мульчера предусмотрен отдельный выезд специалиста и оценка объёма работ."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Что делать со скошенной травой и растительными остатками?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Можно оставить траву в валках, собрать и складировать на участке, погрузить в транспорт или организовать вывоз на полигон."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Работаете ли вы регулярно по графику?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Да. Для газонов и робот-косилок доступны повторные выезды и регулярное обслуживание участка по графику."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="#top" aria-label="ЧИСТОЛУГ">
+          <img
+            class="brand-logo-image"
+            src="assets/logo-header.png"
+            alt="Логотип ЧИСТОЛУГ"
+            width="180"
+            height="120"
+          />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#services">Услуги</a>
+          <a href="#system">Инфографика</a>
+          <a href="#prices">Прайс</a>
+          <a href="#faq">FAQ</a>
+          <a class="button button-small button-ghost" href="#quote">Оставить заявку</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Современный ландшафтный сервис</p>
+            <h1>Превращаем заросший участок в чистую, управляемую территорию.</h1>
+            <p class="hero-lead">
+              ЧИСТОЛУГ берёт на себя полный цикл: от аккуратного покоса газона и работы робот-косилки
+              до уничтожения борщевика, удаления пней и тяжёлой расчистки мульчером.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#quote">Рассчитать участок</a>
+              <a class="button button-secondary" href="#prices">Смотреть прайс</a>
+            </div>
+            <ul class="hero-tags" aria-label="Направления работ">
+              <li>Газоны и частные участки</li>
+              <li>Заброшенные территории</li>
+              <li>Опасный борщевик</li>
+              <li>Пни и поросль</li>
+              <li>Мульчер и heavy-duty расчистка</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" style="--delay: 0.12s">
+            <div class="hero-orbit" aria-hidden="true"></div>
+            <figure class="hero-scene-card">
+              <img
+                src="assets/hiro.png"
+                alt="Техника ЧИСТОЛУГ на объекте: робот-косилка, ручной покос и расчистка участка с погрузкой растительных остатков."
+                width="1536"
+                height="1024"
+                fetchpriority="high"
+              />
+              <figcaption class="scene-caption">
+                <span>Работа на объекте</span>
+                <strong>От точного покоса газона до тяжёлой расчистки и вывоза под одну задачу.</strong>
+              </figcaption>
+            </figure>
+            <div class="hero-badge-grid" aria-label="Ключевые форматы работ">
+              <article class="hero-badge">
+                <span>Робот-косилка</span>
+                <strong>от 8 ₽/м²</strong>
+                <p>для ровного регулярного газона без стационарного монтажа</p>
+              </article>
+              <article class="hero-badge">
+                <span>Триммер / мотокоса</span>
+                <strong>от 15 ₽/м²</strong>
+                <p>для кромок, рельефа, бурьяна и участков с ручным проходом</p>
+              </article>
+              <article class="hero-badge">
+                <span>Мульчер / пни / борщевик</span>
+                <strong>Под ключ</strong>
+                <p>для сложной расчистки, опасных очагов и подготовки территории</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof section">
+        <div class="container">
+          <div class="proof-grid">
+            <article class="metric reveal">
+              <span class="metric-label">Стартовый тариф</span>
+              <strong class="metric-value">от 8 ₽/м²</strong>
+              <p>робот-косилка для регулярного, ровного и тихого покоса</p>
+            </article>
+            <article class="metric reveal" style="--delay: 0.06s">
+              <span class="metric-label">Базовый покос</span>
+              <strong class="metric-value">от 15 ₽/м²</strong>
+              <p>газонная трава триммером на участках и придомовых территориях</p>
+            </article>
+            <article class="metric reveal" style="--delay: 0.12s">
+              <span class="metric-label">Сложные очаги</span>
+              <strong class="metric-value">от 25 ₽/м²</strong>
+              <p>гербицидная обработка борщевика и точечная борьба с повторным ростом</p>
+            </article>
+            <article class="metric reveal" style="--delay: 0.18s">
+              <span class="metric-label">Тяжёлая техника</span>
+              <strong class="metric-value">от 25 000 ₽/га</strong>
+              <p>мульчирование и расчистка заросших территорий под проектную задачу</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Что делает компания</p>
+            <h2>Пять направлений, которые закрывают участок от первого покоса до полной расчистки.</h2>
+            <p>
+              Мы не продаём один инструмент всем подряд. Под каждую задачу собирается рабочая схема:
+              техника, люди, шаги, вывоз, финальная чистота и повторный контроль.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <span class="service-icon">01</span>
+              <h3>Покос травы и бурьяна</h3>
+              <p>
+                Газон, высокая трава, сухостой, склоны, заборы, бордюры и труднодоступные места. Работаем
+                триммером и мотокосой без потери качества на кромках.
+              </p>
+              <ul>
+                <li>от 15 ₽/м² за газонную траву</li>
+                <li>от 30 ₽/м² за плотный бурьян</li>
+                <li>от 6000 ₽ минимальный выезд бригады</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal" style="--delay: 0.06s">
+              <span class="service-icon">02</span>
+              <h3>Уничтожение борщевика</h3>
+              <p>
+                Опасные очаги снимаем системно: осмотр, защитные меры, гербицид, механическое удаление и
+                контроль повторных всходов.
+              </p>
+              <ul>
+                <li>от 25 ₽/м² гербицидная обработка</li>
+                <li>от 70 ₽/м² комплексное уничтожение</li>
+                <li>от 3000 ₽ минимальный заказ</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal" style="--delay: 0.12s">
+              <span class="service-icon">03</span>
+              <h3>Робот-косилка без монтажа кабелей</h3>
+              <p>
+                Привозим робота на объект, настраиваем маршрут и оставляем на цикл покоса. Подходит для
+                ровных газонов, регулярного сервиса и тех, кто ценит тишину.
+              </p>
+              <ul>
+                <li>от 8 ₽/м² за автономный покос</li>
+                <li>до 30 соток одним проектом</li>
+                <li>от 5000 ₽ за суточный цикл</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal" style="--delay: 0.18s">
+              <span class="service-icon">04</span>
+              <h3>Удаление пней</h3>
+              <p>
+                Фрезеровка, ручное выкапывание, химическое удаление, вывоз и засыпка. Решаем задачу в
+                чистовую, чтобы участок был готов к благоустройству или стройке.
+              </p>
+              <ul>
+                <li>от 5000 ₽ фрезеровка малых пней</li>
+                <li>от 1500 ₽ ручное и химическое удаление</li>
+                <li>от 4000 ₽ минимальный заказ</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal" style="--delay: 0.24s">
+              <span class="service-icon">05</span>
+              <h3>Мульчер и расчистка heavy-duty</h3>
+              <p>
+                Для сложных площадей, кустарника, поросли и мелколесья. Подходит, когда обычный покос уже
+                не решает задачу и нужна серьёзная подготовка территории.
+              </p>
+              <ul>
+                <li>от 20 ₽/м² мульчирование травы</li>
+                <li>от 45 ₽/м² мелколесье и трудные зоны</li>
+                <li>от 30 000 ₽ минимальный выезд техники</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section system" id="system">
+        <div class="container system-grid">
+          <div class="system-copy reveal">
+            <p class="eyebrow">Инфографика</p>
+            <h2>Как ЧИСТОЛУГ собирает рабочую систему под ваш участок.</h2>
+            <p>
+              Для каждого объекта подбираем свой рабочий сценарий: оцениваем плотность растительности,
+              рельеф, доступ техники и конечную задачу, а затем запускаем нужную комбинацию работ.
+            </p>
+            <div class="system-list">
+              <article>
+                <strong>Точный слой</strong>
+                <p>Робот-косилка и триммер отвечают за аккуратную геометрию, края и регулярность.</p>
+              </article>
+              <article>
+                <strong>Силовой слой</strong>
+                <p>Бурьян, кустарник, поросль и мелколесье закрываются мульчером и тяжёлой расчисткой.</p>
+              </article>
+              <article>
+                <strong>Риск-слой</strong>
+                <p>Борщевик требует защитных сценариев, гербицидов и повторного контроля по циклу.</p>
+              </article>
+              <article>
+                <strong>Финишный слой</strong>
+                <p>Сбор, погрузка, вывоз, засыпка и выравнивание превращают работу в законченный результат.</p>
+              </article>
+            </div>
+          </div>
+
+          <figure class="system-visual reveal" style="--delay: 0.12s">
+            <img
+              src="assets/services.png"
+              alt="Коллаж направлений ЧИСТОЛУГ: робот-косилка и ручной покос, мульчер, обработка борщевика и вывоз растительных остатков."
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Как работаем</p>
+            <h2>От первого контакта до чистой площадки без хаоса и лишних выездов.</h2>
+          </div>
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <span>Шаг 1</span>
+              <h3>Осмотр и сценарий</h3>
+              <p>Определяем площадь, высоту травы, плотность сорняка, наличие пней, подъезды и задачу участка.</p>
+            </article>
+            <article class="process-card reveal" style="--delay: 0.06s">
+              <span>Шаг 2</span>
+              <h3>Подбор техники</h3>
+              <p>Назначаем связку: триммер, робот-косилка, гербицид, фреза, мульчер или комбинированный выезд.</p>
+            </article>
+            <article class="process-card reveal" style="--delay: 0.12s">
+              <span>Шаг 3</span>
+              <h3>Основной проход</h3>
+              <p>Проводим покос, расчистку или уничтожение очага с защитой, контролем и точной маршрутизацией.</p>
+            </article>
+            <article class="process-card reveal" style="--delay: 0.18s">
+              <span>Шаг 4</span>
+              <h3>Финиш и контроль</h3>
+              <p>Собираем остатки, загружаем, вывозим, выравниваем поверхность и при необходимости ставим повторный цикл.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cases">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Типовые задачи</p>
+            <h2>Три частых запроса, с которыми к нам обращаются в сезон и вне сезона.</h2>
+          </div>
+          <div class="case-grid">
+            <article class="case-card reveal">
+              <h3>Нужен быстрый и чистый покос</h3>
+              <p>Газон, дачный участок, кромки вдоль дорожек и заборов, повторные выезды по графику.</p>
+              <strong>Решение: триммер / робот-косилка</strong>
+            </article>
+            <article class="case-card reveal" style="--delay: 0.08s">
+              <h3>Участок зарос и стал небезопасным</h3>
+              <p>Бурьян, сухостой, борщевик, неравномерный рельеф, заброшенные зоны после сезона или стройки.</p>
+              <strong>Решение: мотокоса + гербицид + расчистка</strong>
+            </article>
+            <article class="case-card reveal" style="--delay: 0.16s">
+              <h3>Нужна тяжёлая подготовка территории</h3>
+              <p>Кустарник, поросль, пни, мелколесье и участок под строительство или благоустройство.</p>
+              <strong>Решение: мульчер + фрезеровка + вывоз</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prices" id="prices">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Прайс</p>
+            <h2>Прозрачная матрица цен по основным направлениям.</h2>
+            <p>
+              Базовые цены помогают быстро сориентироваться по бюджету. Точный расчёт зависит от площади,
+              доступа техники, плотности растительности, сбора и необходимости вывоза.
+            </p>
+          </div>
+
+          <div class="price-chips reveal">
+            <a class="chip-link" href="#price-trimmer">Триммер</a>
+            <a class="chip-link" href="#price-hogweed">Борщевик</a>
+            <a class="chip-link" href="#price-robot">Робот-косилка</a>
+            <a class="chip-link" href="#price-stumps">Пни</a>
+            <a class="chip-link" href="#price-mulcher">Мульчер</a>
+          </div>
+
+          <div class="price-stack">
+            <details class="price-panel reveal" id="price-trimmer" open>
+              <summary>
+                <div>
+                  <span class="price-panel-label">Покос травы с ручной косилкой</span>
+                  <strong>от 15 ₽/м² до 40 ₽/м²</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист работ с триммером / мотокосой</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Покос газонной травы</td><td>Обычная газонная трава высотой до 30–40 см.</td><td>м²</td><td>от 15 руб/м²</td></tr>
+                    <tr><td>Покос высокой травы</td><td>Заросшие участки 40–80 см, усиленная леска или нож.</td><td>м²</td><td>от 20 руб/м²</td></tr>
+                    <tr><td>Покос бурьяна</td><td>Густые сорняки и бурьян до 1–1.5 м, металлический нож или диск.</td><td>м²</td><td>от 30 руб/м²</td></tr>
+                    <tr><td>Труднодоступные места</td><td>Вокруг деревьев, столбов, бордюров, зданий и на неровном рельефе.</td><td>м²</td><td>от 35 руб/м²</td></tr>
+                    <tr><td>Вдоль заборов и бордюров</td><td>Аккуратный подкос вдоль ограждений и дорожек.</td><td>м²</td><td>от 25 руб/м²</td></tr>
+                    <tr><td>Покос на склонах</td><td>Наклонные участки, где нельзя использовать колесную технику.</td><td>м²</td><td>от 25 руб/м²</td></tr>
+                    <tr><td>Заброшенные участки</td><td>Расчистка территории с густой растительностью и сорняками.</td><td>м²</td><td>от 40 руб/м²</td></tr>
+                    <tr><td>Укладка в валки после покоса</td><td>Скошенная трава складывается в валки или кучи.</td><td>м²</td><td>от 10 руб/м²</td></tr>
+                    <tr><td>Ручной сбор и складирование</td><td>Сбор граблями и складирование у заказчика.</td><td>м²</td><td>от 15 руб/м²</td></tr>
+                    <tr><td>Погрузка скошенной травы</td><td>Сбор травы и погрузка в мешки или контейнер.</td><td>м²</td><td>от 20 руб/м²</td></tr>
+                    <tr><td>Расчистка участка триммером</td><td>Подготовка территории перед строительством или благоустройством.</td><td>м²</td><td>от 35 руб/м²</td></tr>
+                    <tr><td>Срез мелкой поросли</td><td>Удаление молодой древесной поросли до 2 см диаметром.</td><td>м²</td><td>от 40 руб/м²</td></tr>
+                    <tr><td>Удаление сухостоя</td><td>Скашивание сухой травы и прошлогодней растительности.</td><td>м²</td><td>от 20 руб/м²</td></tr>
+                    <tr><td>Погрузка растительных остатков</td><td>Погрузка травы, бурьяна и растительных остатков для вывоза.</td><td>м³</td><td>от 1000 руб/м³</td></tr>
+                    <tr><td>Вывоз скошенной травы</td><td>Транспортировка растительных отходов на полигон утилизации.</td><td>м³</td><td>1500–3000 руб/м³</td></tr>
+                    <tr><td>Минимальный выезд бригады</td><td>Минимальная стоимость работ при небольшом объёме.</td><td>заказ</td><td>6000 руб</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="price-panel reveal" id="price-hogweed">
+              <summary>
+                <div>
+                  <span class="price-panel-label">Уничтожение борщевика</span>
+                  <strong>от 25 ₽/м² до 70 ₽/м²</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист на уничтожение борщевика</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Осмотр участка и оценка</td><td>Выезд специалиста, определение площади заражения и смета.</td><td>выезд</td><td>от 1000 ₽</td></tr>
+                    <tr><td>Гербицидная обработка</td><td>Опрыскивание профессиональными системными гербицидами.</td><td>м²</td><td>от 25 ₽/м²</td></tr>
+                    <tr><td>Механическое удаление</td><td>Скашивание триммером или мотокосой с металлическим ножом.</td><td>м²</td><td>от 40 ₽/м²</td></tr>
+                    <tr><td>Выкапывание с корнем</td><td>Полное удаление растения вручную для одиночных очагов.</td><td>растение</td><td>от 250 ₽/шт</td></tr>
+                    <tr><td>Комплексное уничтожение</td><td>Покос, гербицидная обработка и контроль повторных всходов.</td><td>м²</td><td>от 70 ₽/м²</td></tr>
+                    <tr><td>Расчистка участка перед обработкой</td><td>Удаление травы и густой растительности перед основной фазой.</td><td>м²</td><td>от 30 ₽/м²</td></tr>
+                    <tr><td>Сбор растительных остатков</td><td>Ручной сбор скошенных растений и складирование.</td><td>м²</td><td>от 20 ₽/м²</td></tr>
+                    <tr><td>Погрузка растительных остатков</td><td>Погрузка растительности и отходов в транспорт.</td><td>м³</td><td>от 1000 ₽/м³</td></tr>
+                    <tr><td>Вывоз растительных отходов</td><td>Транспортировка борщевика и остатков на полигон.</td><td>м³</td><td>от 3000 ₽/м³</td></tr>
+                    <tr><td>Минимальный заказ</td><td>Минимальная стоимость выполнения при небольшом объёме.</td><td>заказ</td><td>от 3000 ₽</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="price-panel reveal" id="price-robot">
+              <summary>
+                <div>
+                  <span class="price-panel-label">Услуги робот-косилки</span>
+                  <strong>от 8 ₽/м² и от 1200 ₽/час</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист услуг робот-косилки без монтажа кабелей</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Выезд и оценка участка</td><td>Осмотр, определение площади, препятствий и времени работы.</td><td>выезд</td><td>от 1000 ₽</td></tr>
+                    <tr><td>Покос газона роботом</td><td>Автономное кошение на участке клиента без участия оператора.</td><td>м²</td><td>от 8 ₽/м²</td></tr>
+                    <tr><td>Средний участок</td><td>Доставка, настройка и полный цикл покоса до 10 соток.</td><td>участок до 10 соток</td><td>от 4000 ₽</td></tr>
+                    <tr><td>Большой участок</td><td>Работа несколько часов или дней до полного завершения покоса.</td><td>участок до 30 соток</td><td>от 8000 ₽</td></tr>
+                    <tr><td>Почасовая аренда</td><td>Робот-косилка на объекте с настройкой и контролем работы.</td><td>час</td><td>от 1200 ₽/час</td></tr>
+                    <tr><td>Суточная аренда</td><td>Робот доставляется на участок и работает в течение суток.</td><td>сутки</td><td>от 5000 ₽/сутки</td></tr>
+                    <tr><td>Контроль оператора</td><td>Покос с периодическим надзором специалиста.</td><td>час</td><td>от 1500 ₽/час</td></tr>
+                    <tr><td>Настройка и запуск</td><td>Подготовка робота, настройка параметров и запуск программы.</td><td>услуга</td><td>от 1500 ₽</td></tr>
+                    <tr><td>Повторный покос</td><td>Регулярное обслуживание участка по графику.</td><td>м²</td><td>от 6 ₽/м²</td></tr>
+                    <tr><td>Доставка робот-косилки</td><td>Транспортировка оборудования на объект и обратно.</td><td>выезд</td><td>от 1000 ₽</td></tr>
+                    <tr><td>Срочный выезд</td><td>Работы в день обращения или вне очереди.</td><td>выезд</td><td>от 2000 ₽</td></tr>
+                    <tr><td>Минимальный заказ</td><td>Минимальная стоимость работ для сервиса робот-косилки.</td><td>заказ</td><td>от 8000 ₽</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="price-panel reveal" id="price-stumps">
+              <summary>
+                <div>
+                  <span class="price-panel-label">Удаление пней</span>
+                  <strong>от 1500 ₽ до 20 000 ₽</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист на удаление пней</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Выезд специалиста и оценка</td><td>Осмотр доступа техники, измерение диаметра пней и смета.</td><td>выезд</td><td>от 2 000 ₽</td></tr>
+                    <tr><td>Фрезеровка до 20 см</td><td>Измельчение пня фрезой на глубину около 20 см.</td><td>пень (⌀ ≤20 см)</td><td>от 5 000 ₽</td></tr>
+                    <tr><td>Фрезеровка 21–30 см</td><td>Глубина до 20–30 см.</td><td>пень (⌀ 21–30 см)</td><td>от 7 500 ₽</td></tr>
+                    <tr><td>Фрезеровка 31–40 см</td><td>Глубина до 30–40 см.</td><td>пень (⌀ 31–40 см)</td><td>от 9 000 ₽</td></tr>
+                    <tr><td>Фрезеровка 41–50 см</td><td>Глубокая фрезеровка средней категории.</td><td>пень (⌀ 41–50 см)</td><td>от 12 000 ₽</td></tr>
+                    <tr><td>Крупные пни более 50 см</td><td>Глубокая фрезеровка, расчёт индивидуально.</td><td>пень (⌀ &gt;50 см)</td><td>от 20 000 ₽</td></tr>
+                    <tr><td>Ручное выкапывание корней</td><td>Полное удаление с корнем при ограниченном доступе.</td><td>пень</td><td>от 1 500 ₽</td></tr>
+                    <tr><td>Химическое удаление</td><td>Обработка реагентом или селитрой, медленный метод.</td><td>пень</td><td>от 1 500 ₽</td></tr>
+                    <tr><td>Погрузка и вывоз</td><td>Погрузка измельчённых остатков или целых пней.</td><td>м³</td><td>от 1 000 ₽</td></tr>
+                    <tr><td>Засыпка ямы и выравнивание</td><td>Трамбовка, засыпка и восстановление поверхности.</td><td>пень / шт.</td><td>от 500 ₽</td></tr>
+                    <tr><td>Комплекс под ключ</td><td>Фреза + вывоз + засыпка и утрамбовка.</td><td>пень</td><td>от 5 000 ₽</td></tr>
+                    <tr><td>Минимальный заказ</td><td>Гарантирует выезд и организацию работ по малым объектам.</td><td>заказ</td><td>от 4 000 ₽</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="price-panel reveal" id="price-mulcher">
+              <summary>
+                <div>
+                  <span class="price-panel-label">Работы мульчером и расчистка</span>
+                  <strong>от 20 ₽/м², от 8000 ₽/сотка, от 25 000 ₽/га</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист на работы мульчером</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Выезд и осмотр участка</td><td>Осмотр территории и определение плотности растительности.</td><td>выезд</td><td>от 2000 ₽</td></tr>
+                    <tr><td>Мульчирование травы</td><td>Измельчение высокой травы и сорной растительности.</td><td>м²</td><td>от 20 ₽/м²</td></tr>
+                    <tr><td>Мульчирование густой травы и бурьяна</td><td>Высокая трава более 50 см и плотная растительность.</td><td>м²</td><td>от 30 ₽/м²</td></tr>
+                    <tr><td>Мульчирование кустарника</td><td>Измельчение кустарников и поросли.</td><td>м²</td><td>от 35 ₽/м²</td></tr>
+                    <tr><td>Мульчирование мелколесья</td><td>Удаление молодых деревьев диаметром до 10–15 см.</td><td>м²</td><td>от 45 ₽/м²</td></tr>
+                    <tr><td>Расчистка участка мульчером</td><td>Полная расчистка от травы, кустарника и мелких деревьев.</td><td>сотка</td><td>от 8000 ₽/сотка</td></tr>
+                    <tr><td>Расчистка заросших территорий</td><td>Подготовка земли под строительство, сельхоз или благоустройство.</td><td>гектар</td><td>от 25 000 ₽/га</td></tr>
+                    <tr><td>Мульчирование порубочных остатков</td><td>Измельчение веток, деревьев и древесных отходов на месте.</td><td>м²</td><td>от 30 ₽/м²</td></tr>
+                    <tr><td>Планировочная расчистка</td><td>Измельчение растительности с выравниванием участка.</td><td>м²</td><td>от 40 ₽/м²</td></tr>
+                    <tr><td>Труднодоступные места</td><td>Работа на склонах, лесных участках и в зарослях.</td><td>м²</td><td>от 45 ₽/м²</td></tr>
+                    <tr><td>Минимальный заказ</td><td>Минимальная стоимость выезда техники.</td><td>заказ</td><td>от 30 000 ₽</td></tr>
+                    <tr><td>Валка дерева</td><td>Цена зависит от диаметра дерева.</td><td>шт</td><td>от 2 000 ₽</td></tr>
+                    <tr><td>Расчистка лесного участка</td><td>Мелколесье, цена зависит от диаметра дерева.</td><td>сотка</td><td>от 6 000 ₽</td></tr>
+                    <tr><td>Сложная расчистка участка</td><td>Цена зависит от сложности работ и плотности зарослей.</td><td>сотка</td><td>от 10 000 ₽</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="container faq-grid">
+          <div class="faq-copy reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Коротко о том, что обычно спрашивают перед выездом.</h2>
+            <p>
+              Собрали основные ответы заранее, чтобы вы быстрее поняли, как строится работа, от чего
+              зависит стоимость и что потребуется для точного расчёта.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item reveal" open>
+              <summary>С какими участками вы работаете?</summary>
+              <p>
+                С газонами, частными участками, территориями с бурьяном, борщевиком, сухостоем, кустарником,
+                порослью, пнями и мелколесьем. Работаем как по точечной задаче, так и под комплексную расчистку.
+              </p>
+            </details>
+            <details class="faq-item reveal" style="--delay: 0.05s">
+              <summary>Можно ли заказать только осмотр и смету?</summary>
+              <p>
+                Да. Для борщевика, удаления пней, робот-косилки и мульчера предусмотрен отдельный выезд
+                специалиста с оценкой доступа, объёма и нужной технологии.
+              </p>
+            </details>
+            <details class="faq-item reveal" style="--delay: 0.1s">
+              <summary>Что делать со скошенной травой и остатками?</summary>
+              <p>
+                Возможны разные сценарии: оставить в валках, собрать и складировать, погрузить в контейнер
+                или организовать вывоз на полигон. Это выбирается на этапе сметы.
+              </p>
+            </details>
+            <details class="faq-item reveal" style="--delay: 0.15s">
+              <summary>Робот-косилка работает без монтажа кабелей?</summary>
+              <p>
+                Да. Робот привозится на объект, настраивается под конкретную задачу и выполняет цикл покоса
+                без стационарного монтажа кабелей и постоянной инсталляции.
+              </p>
+            </details>
+            <details class="faq-item reveal" style="--delay: 0.2s">
+              <summary>Когда нужен мульчер, а не обычный покос?</summary>
+              <p>
+                Когда участок зарос кустарником, порослью, высокой плотной травой или мелколесьем. Мульчер
+                нужен там, где обычный покос не даёт нужной скорости и глубины расчистки.
+              </p>
+            </details>
+            <details class="faq-item reveal" style="--delay: 0.25s">
+              <summary>Можно ли поставить работы на регулярный график?</summary>
+              <p>
+                Да. Особенно это актуально для газонов и робот-косилок. Регулярные выезды помогают удерживать
+                участок в чистом состоянии и не доводить его до дорогой тяжёлой расчистки.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote" id="quote">
+        <div class="container quote-grid">
+          <div class="quote-copy reveal">
+            <p class="eyebrow">Заявка</p>
+            <h2>Опишите участок и отправьте запрос на расчёт за пару минут.</h2>
+            <p>
+              Укажите площадь, характер растительности и цель работ. Запрос откроется в почтовом клиенте
+              уже заполненным и готовым к отправке на <a href="mailto:info@chistolug.ru">info@chistolug.ru</a>.
+            </p>
+            <div class="quote-notes">
+              <article>
+                <strong>Что ускоряет расчёт</strong>
+                <p>Площадь, фото участка, адрес выезда и понимание, нужен ли сбор/вывоз.</p>
+              </article>
+              <article>
+                <strong>Что можно уточнить позже</strong>
+                <p>Подъезд техники, сроки, желаемая частота обслуживания и детализация сметы.</p>
+              </article>
+            </div>
+          </div>
+
+          <form class="quote-form reveal" id="quote-form" style="--delay: 0.12s">
+            <label>
+              <span>Как к вам обращаться</span>
+              <input type="text" name="name" placeholder="Имя или компания" required />
+            </label>
+            <label>
+              <span>Телефон или мессенджер</span>
+              <input type="text" name="contact" placeholder="+7..." required />
+            </label>
+            <label>
+              <span>Что нужно сделать</span>
+              <select name="service" required>
+                <option value="">Выберите направление</option>
+                <option>Покос травы и бурьяна</option>
+                <option>Уничтожение борщевика</option>
+                <option>Робот-косилка</option>
+                <option>Удаление пней</option>
+                <option>Мульчер и тяжёлая расчистка</option>
+                <option>Комплекс работ</option>
+              </select>
+            </label>
+            <label>
+              <span>Площадь / ориентир</span>
+              <input type="text" name="area" placeholder="например, 12 соток или 1800 м²" />
+            </label>
+            <label class="full-width">
+              <span>Короткое описание участка</span>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Высота травы, есть ли борщевик, пни, нужен ли вывоз, как срочно надо начать"
+              ></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Сформировать заявку</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="#top">
+            <img
+              class="brand-logo-image"
+              src="assets/logo-header.png"
+              alt="Логотип ЧИСТОЛУГ"
+              width="168"
+              height="112"
+            />
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="#services">Услуги</a>
+          <a href="#system">Инфографика</a>
+          <a href="#prices">Прайс</a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote">Заявка</a>
+        </div>
+        <div class="footer-meta">
+          <a href="mailto:info@chistolug.ru">info@chistolug.ru</a>
+          <p>© <span id="year"></span> ЧИСТОЛУГ. Уход за участками, расчистка, борщевик, пни, мульчер.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
