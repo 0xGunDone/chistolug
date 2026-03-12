@@ -109,17 +109,12 @@ if (form && statusNode) {
         await navigator.clipboard.writeText(body);
       }
     } catch (_error) {
-      // Fallback is the generated mailto link below.
+      // Leave the text visible via the status message if clipboard access is blocked.
     }
 
-    const mailto = new URL("mailto:info@chistolug.ru");
-    mailto.searchParams.set("subject", `Заявка ЧИСТОЛУГ: ${service || "новый запрос"}`);
-    mailto.searchParams.set("body", body);
-
     statusNode.textContent =
-      "Открываем письмо с заполненной заявкой. Если почта не открылась, текст запроса уже скопирован в буфер обмена.";
+      "Текст заявки скопирован в буфер обмена. Отправьте его в удобный мессенджер или используйте как основу для звонка.";
 
-    window.location.href = mailto.toString();
     form.reset();
   });
 }
