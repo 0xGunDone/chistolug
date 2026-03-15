@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ЧИСТОЛУГ - покос травы, расчистка участков, уничтожение борщевика и удаление пней</title>
+    <title>ЧИСТОЛУГ - покос травы, расчистка участков, борщевик, робот-косилка и удаление пней</title>
     <meta
       name="description"
-      content="ЧИСТОЛУГ выполняет покос травы, расчистку заросших участков, уничтожение борщевика, удаление пней и мульчирование. Современный подход, понятный прайс, работы под ключ."
+      content="ЧИСТОЛУГ выполняет покос травы, расчистку заросших участков, уничтожение борщевика, робот-покос, удаление пней и мульчирование. Работы под ключ, прозрачный прайс, выезд по договору."
     />
     <meta
       name="keywords"
-      content="покос травы, расчистка участков, уничтожение борщевика, удаление пней, мульчер, покос газона"
+      content="покос травы, расчистка участков, уничтожение борщевика, робот-косилка, удаление пней, мульчер, покос газона"
     />
     <meta name="theme-color" content="#0d2413" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -23,7 +23,7 @@
     <meta property="og:title" content="ЧИСТОЛУГ - современный сервис покоса и расчистки участков" />
     <meta
       property="og:description"
-      content="От аккуратного покоса газона до тяжёлой расчистки мульчером: борщевик, бурьян, пни и мелколесье."
+      content="От аккуратного покоса газона до тяжёлой расчистки мульчером: борщевик, бурьян, пни, мелколесье и робот-косилка."
     />
     <meta property="og:url" content="https://chistolug.ydns.eu/" />
     <meta property="og:site_name" content="ЧИСТОЛУГ" />
@@ -35,10 +35,17 @@
     <meta name="twitter:title" content="ЧИСТОЛУГ - покос, расчистка и восстановление участков" />
     <meta
       name="twitter:description"
-      content="Комплексный ландшафтный сервис: трава, борщевик, пни и мульчер."
+      content="Комплексный ландшафтный сервис: трава, борщевик, робот-косилка, пни и мульчер."
     />
     <meta name="twitter:image" content="https://chistolug.ydns.eu/assets/og-card.svg" />
-    <link rel="preload" href="assets/hiro.png" as="image" />
+    <link
+      rel="preload"
+      href="assets/hiro-960.webp"
+      as="image"
+      imagesrcset="assets/hiro-960.webp 960w, assets/hiro-1536.webp 1536w"
+      imagesizes="(max-width: 960px) 100vw, 720px"
+      type="image/webp"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -51,7 +58,7 @@
             "url": "https://chistolug.ydns.eu/",
             "logo": "https://chistolug.ydns.eu/assets/logo-header.png",
             "image": "https://chistolug.ydns.eu/assets/og-card.svg",
-            "description": "Комплексный сервис по покосу травы, расчистке участков, уничтожению борщевика, удалению пней и мульчированию.",
+            "description": "Комплексный сервис по покосу травы, расчистке участков, уничтожению борщевика, робот-покосу, удалению пней и мульчированию.",
             "areaServed": {
               "@type": "Country",
               "name": "Россия"
@@ -61,8 +68,30 @@
               "Покос травы",
               "Расчистка участков",
               "Уничтожение борщевика",
+              "Робот-косилки",
               "Удаление пней",
               "Мульчирование"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://chistolug.ydns.eu/#localbusiness",
+            "name": "ЧИСТОЛУГ",
+            "url": "https://chistolug.ydns.eu/",
+            "telephone": "+79954348800",
+            "priceRange": "₽₽",
+            "image": "https://chistolug.ydns.eu/assets/og-card.svg",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Россия"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+79954348800",
+                "contactType": "customer service",
+                "availableLanguage": ["ru"]
+              }
             ]
           },
           {
@@ -132,6 +161,24 @@
           },
           {
             "@type": "Service",
+            "name": "Робот-косилка без стационарного монтажа",
+            "provider": {
+              "@id": "https://chistolug.ydns.eu/#organization"
+            },
+            "description": "Доставка робот-косилки на участок, запуск автономного цикла и регулярное обслуживание по графику.",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "RUB",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "RUB",
+                "minPrice": "8",
+                "unitCode": "MTK"
+              }
+            }
+          },
+          {
+            "@type": "Service",
             "name": "Удаление пней",
             "provider": {
               "@id": "https://chistolug.ydns.eu/#organization"
@@ -163,7 +210,7 @@
                 "name": "Можно ли заказать только осмотр и смету?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Да. Для борщевика, пней и мульчера предусмотрен отдельный выезд специалиста и оценка объёма работ."
+                  "text": "Да. Для борщевика, пней, робот-косилки и мульчера предусмотрен отдельный выезд специалиста и оценка объёма работ."
                 }
               },
               {
@@ -195,13 +242,13 @@
         <a class="brand" href="#top" aria-label="ЧИСТОЛУГ">
           <img
             class="brand-logo-image"
-            src="assets/logo-header.png"
+            src="assets/logo-header.webp"
             alt="Логотип ЧИСТОЛУГ"
             width="180"
             height="120"
           />
         </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
           <span></span>
           <span></span>
         </button>
@@ -220,34 +267,51 @@
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <p class="eyebrow">Современный ландшафтный сервис</p>
-            <h1>Превращаем заросший участок в чистую, управляемую территорию.</h1>
+            <h1>Приводим участок в порядок за один выезд.</h1>
             <p class="hero-lead">
-              ЧИСТОЛУГ берёт на себя полный цикл: от аккуратного покоса газона до уничтожения борщевика,
-              удаления пней и тяжёлой расчистки мульчером.
+              От регулярного покоса и робот-косилки до тяжёлой расчистки: берём на себя технику, людей,
+              вывоз и контроль результата по договору.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#quote">Рассчитать участок</a>
               <a class="button button-secondary" href="#prices">Смотреть прайс</a>
             </div>
             <ul class="hero-tags" aria-label="Направления работ">
-              <li>Газоны и частные участки</li>
-              <li>Заброшенные территории</li>
-              <li>Опасный борщевик</li>
-              <li>Пни и поросль</li>
-              <li>Мульчер и тяжёлая расчистка</li>
+              <li>Выезд и смета в день обращения</li>
+              <li>Работа по договору и безналу</li>
+              <li>Фотоотчёт по завершению</li>
             </ul>
+            <div class="hero-contact-links">
+              <a class="hero-contact-link" href="tel:+79954348800">Позвонить Артёму</a>
+              <a class="hero-contact-link" href="https://wa.me/79954348800" target="_blank" rel="noopener">WhatsApp</a>
+              <a
+                class="hero-contact-link"
+                href="https://t.me/share/url?url=https%3A%2F%2Fchistolug.ydns.eu%2F&text=%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BA%D0%B0%20%D0%A7%D0%98%D0%A1%D0%A2%D0%9E%D0%9B%D0%A3%D0%93"
+                target="_blank"
+                rel="noopener"
+              >
+                Telegram
+              </a>
+            </div>
           </div>
 
           <div class="hero-visual reveal" style="--delay: 0.12s">
             <div class="hero-orbit" aria-hidden="true"></div>
             <figure class="hero-scene-card">
-              <img
-                src="assets/hiro.png"
-                alt="Техника ЧИСТОЛУГ на объекте: ручной покос и расчистка участка с погрузкой растительных остатков."
-                width="1536"
-                height="1024"
-                fetchpriority="high"
-              />
+              <picture>
+                <source
+                  srcset="assets/hiro-960.webp 960w, assets/hiro-1536.webp 1536w"
+                  sizes="(max-width: 960px) 100vw, 720px"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/hiro.png"
+                  alt="Техника ЧИСТОЛУГ на объекте: ручной покос и расчистка участка с погрузкой растительных остатков."
+                  width="1536"
+                  height="1024"
+                  fetchpriority="high"
+                />
+              </picture>
               <figcaption class="scene-caption">
                 <span>Работа на объекте</span>
                 <strong>От точного покоса газона до тяжёлой расчистки и вывоза под одну задачу.</strong>
@@ -269,6 +333,11 @@
                 <strong>от 1 000 ₽/сотка</strong>
                 <p>для бурьяна, кустарника, поросли и подготовки сложных участков под задачу</p>
               </article>
+              <article class="hero-badge">
+                <span>Робот-косилка</span>
+                <strong>от 8 ₽/м²</strong>
+                <p>для тихого регулярного покоса без стационарного монтажа на участке</p>
+              </article>
             </div>
           </div>
         </div>
@@ -283,11 +352,16 @@
               <p>аккуратный покос газонной травы на участках и придомовых территориях</p>
             </article>
             <article class="metric reveal" style="--delay: 0.06s">
+              <span class="metric-label">Робот-косилка</span>
+              <strong class="metric-value">от 8 ₽/м²</strong>
+              <p>автономный цикл покоса для ровных газонов без стационарного монтажа</p>
+            </article>
+            <article class="metric reveal" style="--delay: 0.1s">
               <span class="metric-label">Сложные очаги</span>
               <strong class="metric-value">от 250 ₽/сотка</strong>
               <p>гербицидная обработка борщевика сертифицированными препаратами</p>
             </article>
-            <article class="metric reveal" style="--delay: 0.12s">
+            <article class="metric reveal" style="--delay: 0.14s">
               <span class="metric-label">Удаление пней</span>
               <strong class="metric-value">от 5 000 ₽/пень</strong>
               <p>фрезеровка и удаление пней с расчётом по диаметру и доступу техники</p>
@@ -305,7 +379,7 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="eyebrow">Что делает компания</p>
-            <h2>Четыре направления, которые закрывают участок от первого покоса до полной расчистки.</h2>
+            <h2>Пять направлений, которые закрывают участок от первого покоса до полной расчистки.</h2>
             <p>
               Мы не продаём один инструмент всем подряд. Под каждую задачу собирается рабочая схема:
               техника, люди, шаги, вывоз, финальная чистота и повторный контроль.
@@ -343,6 +417,20 @@
 
             <article class="service-card reveal" style="--delay: 0.12s">
               <span class="service-icon">03</span>
+              <h3>Робот-косилка без монтажа кабелей</h3>
+              <p>
+                Привозим робота на объект, запускаем автономный цикл и ведём обслуживание по графику.
+                Подходит для ровных газонов, где нужен тихий и регулярный покос.
+              </p>
+              <ul>
+                <li>от 8 ₽/м² за робот-покос</li>
+                <li>до 30 соток одним проектом</li>
+                <li>от 5 000 ₽ за суточный цикл</li>
+              </ul>
+            </article>
+
+            <article class="service-card reveal" style="--delay: 0.18s">
+              <span class="service-icon">04</span>
               <h3>Удаление пней</h3>
               <p>
                 Фрезеровка и удаление пней с оценкой по диаметру, глубине и доступу техники. Подходит для
@@ -355,8 +443,8 @@
               </ul>
             </article>
 
-            <article class="service-card reveal" style="--delay: 0.18s">
-              <span class="service-icon">04</span>
+            <article class="service-card reveal" style="--delay: 0.24s">
+              <span class="service-icon">05</span>
               <h3>Мульчер и расчистка территорий</h3>
               <p>
                 Для сложных площадей, кустарника, поросли и мелколесья. Работаем собственной техникой,
@@ -384,7 +472,7 @@
             <div class="system-list">
               <article>
                 <strong>Точный слой</strong>
-                <p>Триммер и мотокоса отвечают за аккуратную геометрию, края и регулярность покоса.</p>
+                <p>Робот-косилка, триммер и мотокоса отвечают за аккуратную геометрию, края и регулярность.</p>
               </article>
               <article>
                 <strong>Силовой слой</strong>
@@ -402,13 +490,20 @@
           </div>
 
           <figure class="system-visual reveal" style="--delay: 0.12s">
-            <img
-              src="assets/services.png"
-              alt="Коллаж направлений ЧИСТОЛУГ: ручной покос, мульчер, обработка борщевика и вывоз растительных остатков."
-              width="1536"
-              height="1024"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="assets/services-960.webp 960w, assets/services-1536.webp 1536w"
+                sizes="(max-width: 960px) 100vw, 700px"
+                type="image/webp"
+              />
+              <img
+                src="assets/services.png"
+                alt="Коллаж направлений ЧИСТОЛУГ: ручной покос, мульчер, обработка борщевика и вывоз растительных остатков."
+                width="1536"
+                height="1024"
+                loading="lazy"
+              />
+            </picture>
           </figure>
         </div>
       </section>
@@ -470,6 +565,42 @@
         </div>
       </section>
 
+      <section class="section trust" id="results">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Кейсы</p>
+            <h2>Результат в цифрах: что меняется после выезда ЧИСТОЛУГ.</h2>
+            <p>
+              Вместо общих обещаний показываем типовые сценарии с понятным объёмом и сроками. Точный расчёт
+              делаем после осмотра, но порядок работ и бюджет можно понять заранее.
+            </p>
+          </div>
+          <div class="trust-grid">
+            <article class="trust-card reveal">
+              <span class="trust-kicker">Кейс 1 · частный участок</span>
+              <h3>18 соток, бурьян до 1.2 м</h3>
+              <p class="trust-state">До: проход невозможен, плотная растительность и очаги борщевика.</p>
+              <p class="trust-state">После: чистый периметр, проходы и подготовка под регулярный уход.</p>
+              <strong>1 рабочий день · 3 человека · 2 вида техники</strong>
+            </article>
+            <article class="trust-card reveal" style="--delay: 0.08s">
+              <span class="trust-kicker">Кейс 2 · участок под стройку</span>
+              <h3>Пни + поросль + мелколесье</h3>
+              <p class="trust-state">До: пни и кустарник мешают технике, неровный рельеф.</p>
+              <p class="trust-state">После: фрезеровка, расчистка и выравнивание под дальнейшие работы.</p>
+              <strong>2 этапа · вывоз остатков · фотоотчёт</strong>
+            </article>
+            <article class="trust-card reveal" style="--delay: 0.16s">
+              <span class="trust-kicker">Кейс 3 · регулярный газон</span>
+              <h3>Робот-косилка без монтажа</h3>
+              <p class="trust-state">До: нестабильный результат после ручного покоса.</p>
+              <p class="trust-state">После: ровный покос по графику и предсказуемая стоимость обслуживания.</p>
+              <strong>от 8 ₽/м² · тихий цикл · без стационарного кабеля</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section prices" id="prices">
         <div class="container">
           <div class="section-heading reveal">
@@ -484,6 +615,7 @@
           <div class="price-chips reveal">
             <a class="chip-link" href="#price-trimmer">Триммер</a>
             <a class="chip-link" href="#price-hogweed">Борщевик</a>
+            <a class="chip-link" href="#price-robot">Робот-косилка</a>
             <a class="chip-link" href="#price-stumps">Пни</a>
             <a class="chip-link" href="#price-mulcher">Мульчер</a>
           </div>
@@ -539,6 +671,34 @@
                     <tr><td>Гербицидная обработка</td><td>Обработка сертифицированными гербицидами, разрешёнными к применению в РФ.</td><td>сотка</td><td>от 250 ₽/сотка</td></tr>
                     <tr><td>Механическое удаление</td><td>Скашивание и локальная расчистка очага с соблюдением требований безопасности.</td><td>сотка</td><td>от 400 ₽/сотка</td></tr>
                     <tr><td>Комплексное уничтожение</td><td>Гербицидная обработка, механическое удаление и контроль повторных всходов.</td><td>сотка</td><td>от 700 ₽/сотка</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="price-panel reveal" id="price-robot">
+              <summary>
+                <div>
+                  <span class="price-panel-label">Робот-косилка без стационарного монтажа</span>
+                  <strong>от 8 ₽/м² и от 5 000 ₽ за суточный цикл</strong>
+                </div>
+                <span class="summary-icon" aria-hidden="true"></span>
+              </summary>
+              <div class="table-wrap">
+                <table class="price-table">
+                  <caption>Прайс-лист услуг робот-косилки</caption>
+                  <thead>
+                    <tr>
+                      <th>Услуга</th>
+                      <th>Описание</th>
+                      <th>Объём</th>
+                      <th>Цена</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Робот-покос</td><td>Автономный покос ровного газона с настройкой цикла на месте.</td><td>м²</td><td>от 8 ₽/м²</td></tr>
+                    <tr><td>Суточный цикл</td><td>Доставка, настройка и контроль работы на участке в течение дня.</td><td>сутки</td><td>от 5 000 ₽</td></tr>
+                    <tr><td>Регулярный график</td><td>Повторные выезды по расписанию для стабильного состояния газона.</td><td>м²</td><td>индивидуально</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -626,7 +786,7 @@
             <details class="faq-item reveal" style="--delay: 0.05s">
               <summary>Можно ли заказать только осмотр и смету?</summary>
               <p>
-                Да. Для борщевика, удаления пней и мульчера предусмотрен отдельный выезд
+                Да. Для борщевика, удаления пней, робот-косилки и мульчера предусмотрен отдельный выезд
                 специалиста с оценкой доступа, объёма и нужной технологии.
               </p>
             </details>
@@ -684,7 +844,7 @@
             </div>
           </div>
 
-          <form class="quote-form reveal" id="quote-form" style="--delay: 0.12s">
+          <form class="quote-form reveal" id="quote-form" style="--delay: 0.12s" data-endpoint="">
             <label>
               <span>Как к вам обращаться</span>
               <input type="text" name="name" placeholder="Имя или компания" required />
@@ -719,6 +879,7 @@
             </label>
             <button class="button button-primary" type="submit">Сформировать заявку</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <div class="form-actions" id="form-actions" hidden></div>
           </form>
         </div>
       </section>
@@ -730,7 +891,7 @@
           <a class="brand brand-footer" href="#top">
             <img
               class="brand-logo-image"
-              src="assets/logo-header.png"
+              src="assets/logo-header.webp"
               alt="Логотип ЧИСТОЛУГ"
               width="168"
               height="112"
@@ -747,11 +908,30 @@
         <div class="footer-meta">
           <a href="tel:+79954348800">+7 (995) 434-88-00 — Артём</a>
           <a href="https://chistolug.ydns.eu/">chistolug.ydns.eu</a>
+          <div class="footer-service-links">
+            <a href="/pokos-travy.html">Покос травы</a>
+            <a href="/unichtozhenie-borshchevika.html">Борщевик</a>
+            <a href="/robot-kosilka.html">Робот-косилка</a>
+            <a href="/udalenie-pney.html">Удаление пней</a>
+            <a href="/raschistka-mulcherom.html">Мульчер</a>
+          </div>
           <p>Работаем по договору, возможна оплата по безналичному расчёту.</p>
           <p>© <span id="year"></span> ЧИСТОЛУГ. Уход за участками, расчистка, борщевик, пни, мульчер.</p>
         </div>
       </div>
     </footer>
+
+    <div class="mobile-contact-bar" aria-label="Быстрый контакт">
+      <a href="tel:+79954348800">Позвонить</a>
+      <a href="https://wa.me/79954348800" target="_blank" rel="noopener">WhatsApp</a>
+      <a
+        href="https://t.me/share/url?url=https%3A%2F%2Fchistolug.ydns.eu%2F&text=%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B0%D1%81%D1%87%D0%B5%D1%82%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%BA%D0%B0%20%D0%A7%D0%98%D0%A1%D0%A2%D0%9E%D0%9B%D0%A3%D0%93"
+        target="_blank"
+        rel="noopener"
+      >
+        Telegram
+      </a>
+    </div>
 
     <script src="script.js"></script>
   </body>
